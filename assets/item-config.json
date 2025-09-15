@@ -14,7 +14,8 @@
       },
       "duration": 5,
       "stackSize": 10,
-      "usageDescription": "Drink to gain +20% rare item chance for 5 catches"
+      "usageDescription": "Drink to gain +20% rare item chance for 5 catches",
+      "price": 50
     },
     {
       "id": "strong_bait",
@@ -29,7 +30,8 @@
       },
       "duration": 10,
       "stackSize": 20,
-      "usageDescription": "Use to gain +15% catch rate for 10 casts"
+      "usageDescription": "Use to gain +15% catch rate for 10 casts",
+      "price": 30
     },
     {
       "id": "magnetic_enhancer",
@@ -45,7 +47,8 @@
       },
       "duration": 3,
       "stackSize": 5,
-      "usageDescription": "Apply to gain +30% magnetic range for 3 catches"
+      "usageDescription": "Apply to gain +30% magnetic range for 3 catches",
+      "price": 80
     },
     {
       "id": "strength_drink",
@@ -60,7 +63,8 @@
       },
       "duration": 7,
       "stackSize": 15,
-      "usageDescription": "Drink to gain +25% pull strength for 7 catches"
+      "usageDescription": "Drink to gain +25% pull strength for 7 catches",
+      "price": 40
     },
     {
       "id": "line_protector",
@@ -75,7 +79,8 @@
       },
       "duration": 5,
       "stackSize": 8,
-      "usageDescription": "Apply to prevent line breaks for 5 catches"
+      "usageDescription": "Apply to prevent line breaks for 5 catches",
+      "price": 60
     }
   ],
   "equipment": [
@@ -90,7 +95,8 @@
       "bonuses": {
         "catchRate": 10
       },
-      "tier": 1
+      "tier": 1,
+      "price": 100
     },
     {
       "id": "iron_magnet",
@@ -104,7 +110,8 @@
         "catchRate": 18,
         "magneticRange": 10
       },
-      "tier": 2
+      "tier": 2,
+      "price": 250
     },
     {
       "id": "neodymium_magnet",
@@ -119,7 +126,8 @@
         "rareItemChance": 15,
         "magneticRange": 20
       },
-      "tier": 3
+      "tier": 3,
+      "price": 500
     },
     {
       "id": "electromagnet",
@@ -135,7 +143,8 @@
         "legendaryChance": 10,
         "magneticRange": 35
       },
-      "tier": 4
+      "tier": 4,
+      "price": 1200
     },
     {
       "id": "quantum_magnet",
@@ -151,7 +160,8 @@
         "legendaryChance": 25,
         "magneticRange": 50
       },
-      "tier": 5
+      "tier": 5,
+      "price": 3000
     },
     {
       "id": "basic_rope",
@@ -164,7 +174,8 @@
       "bonuses": {
         "pullStrength": 10
       },
-      "tier": 1
+      "tier": 1,
+      "price": 80
     },
     {
       "id": "reinforced_rope",
@@ -178,7 +189,8 @@
         "pullStrength": 20,
         "lineStrength": 30
       },
-      "tier": 2
+      "tier": 2,
+      "price": 200
     },
     {
       "id": "steel_cable",
@@ -192,7 +204,8 @@
         "pullStrength": 35,
         "lineStrength": 60
       },
-      "tier": 3
+      "tier": 3,
+      "price": 450
     },
     {
       "id": "carbon_fiber_line",
@@ -207,7 +220,8 @@
         "lineStrength": 90,
         "catchRate": 10
       },
-      "tier": 4
+      "tier": 4,
+      "price": 1000
     },
     {
       "id": "lucky_badge",
@@ -221,7 +235,8 @@
         "rareItemChance": 10,
         "legendaryChance": 5
       },
-      "tier": 2
+      "tier": 2,
+      "price": 300
     },
     {
       "id": "fortune_medallion",
@@ -236,7 +251,8 @@
         "legendaryChance": 15,
         "catchRate": 5
       },
-      "tier": 4
+      "tier": 4,
+      "price": 1500
     },
     {
       "id": "depth_finder",
@@ -250,7 +266,8 @@
         "magneticRange": 25,
         "catchRate": 5
       },
-      "tier": 3
+      "tier": 3,
+      "price": 400
     },
     {
       "id": "metal_detector",
@@ -264,7 +281,8 @@
         "catchRate": 12,
         "magneticRange": 15
       },
-      "tier": 2
+      "tier": 2,
+      "price": 180
     },
     {
       "id": "treasure_scanner",
@@ -280,10 +298,122 @@
         "legendaryChance": 20,
         "magneticRange": 40
       },
-      "tier": 5
+      "tier": 5,
+      "price": 2500
     }
   ],
-  "collectibles": [],
+  "collectibles": [
+    {
+      "id": "can",
+      "name": "Old Can",
+      "description": "A rusty soda can from the depths",
+      "rarity": "common",
+      "spriteKey": {"key": "RustyAsstes", "frame": 0},
+      "type": "collectible",
+      "value": 5,
+      "weight": 30,
+      "price": 3
+    },
+    {
+      "id": "boot",
+      "name": "Lost Boot",
+      "description": "Someone's old rubber boot",
+      "rarity": "common",
+      "spriteKey": {"key": "RustyAsstes", "frame": 1},
+      "type": "collectible",
+      "value": 10,
+      "weight": 25,
+      "price": 6
+    },
+    {
+      "id": "bottle",
+      "name": "Glass Bottle",
+      "description": "An antique glass bottle",
+      "rarity": "uncommon",
+      "spriteKey": {"key": "RustyAsstes", "frame": 2},
+      "type": "collectible",
+      "value": 15,
+      "weight": 20,
+      "price": 10
+    },
+    {
+      "id": "watch",
+      "name": "Pocket Watch",
+      "description": "A beautifully engraved pocket watch",
+      "rarity": "rare",
+      "spriteKey": {"key": "RustyAsstes", "frame": 4},
+      "type": "collectible",
+      "value": 50,
+      "weight": 8,
+      "price": 35
+    },
+    {
+      "id": "ring",
+      "name": "Gold Ring",
+      "description": "A shiny gold ring with a gemstone",
+      "rarity": "epic",
+      "spriteKey": {"key": "RustyAsstes", "frame": 5},
+      "type": "collectible",
+      "value": 100,
+      "weight": 3,
+      "price": 75
+    },
+    {
+      "id": "treasure_chest",
+      "name": "Treasure Chest",
+      "description": "A small chest filled with coins!",
+      "rarity": "legendary",
+      "spriteKey": {"key": "RustyAsstes", "frame": 3},
+      "type": "collectible",
+      "value": 200,
+      "weight": 1,
+      "price": 150
+    },
+    {
+      "id": "fishing_rod",
+      "name": "Broken Fishing Rod",
+      "description": "Another fisherman's lost equipment",
+      "rarity": "common",
+      "spriteKey": {"key": "RustyAsstes", "frame": 6},
+      "type": "collectible",
+      "value": 8,
+      "weight": 15,
+      "price": 5
+    },
+    {
+      "id": "bike_frame",
+      "name": "Bike Frame",
+      "description": "Rusty remains of an old bicycle",
+      "rarity": "uncommon",
+      "spriteKey": {"key": "RustyAsstes", "frame": 7},
+      "type": "collectible",
+      "value": 20,
+      "weight": 12,
+      "price": 12
+    },
+    {
+      "id": "phone",
+      "name": "Old Phone",
+      "description": "A waterproof vintage mobile phone",
+      "rarity": "rare",
+      "spriteKey": {"key": "RustyAsstes", "frame": 8},
+      "type": "collectible",
+      "value": 75,
+      "weight": 5,
+      "price": 50
+    },
+    {
+      "id": "anchor",
+      "name": "Small Anchor",
+      "description": "A decorative boat anchor",
+      "rarity": "uncommon",
+      "spriteKey": {"key": "RustyAsstes", "frame": 9},
+      "type": "collectible",
+      "value": 35,
+      "weight": 10,
+      "price": 20
+    }
+  ],
   "rarityColors": {
     "common": "#8B8B8B",
     "uncommon": "#4CAF50",
