@@ -1,0 +1,424 @@
+{
+  "consumables": [
+    {
+      "id": "luck_potion",
+      "name": "Luck Potion",
+      "description": "Increases your chances of finding rare items",
+      "rarity": "uncommon",
+      "spriteKey": {"key": "tilemap_packed", "frame": 50},
+      "type": "consumable",
+      "effect": "luck_boost",
+      "bonuses": {
+        "rareItemChance": 20,
+        "legendaryChance": 10
+      },
+      "duration": 5,
+      "stackSize": 10,
+      "usageDescription": "Drink to gain +20% rare item chance for 5 catches",
+      "price": 50
+    },
+    {
+      "id": "strong_bait",
+      "name": "Strong Bait",
+      "description": "Attracts more items to your magnet",
+      "rarity": "common",
+      "spriteKey": {"key": "tilemap_packed", "frame": 51},
+      "type": "consumable",
+      "effect": "catch_boost",
+      "bonuses": {
+        "catchRate": 15
+      },
+      "duration": 10,
+      "stackSize": 20,
+      "usageDescription": "Use to gain +15% catch rate for 10 casts",
+      "price": 30
+    },
+    {
+      "id": "magnetic_enhancer",
+      "name": "Magnetic Enhancer",
+      "description": "Temporarily boosts your magnet power",
+      "rarity": "rare",
+      "spriteKey": {"key": "tilemap_packed", "frame": 52},
+      "type": "consumable",
+      "effect": "magnetic_boost",
+      "bonuses": {
+        "magneticRange": 30,
+        "catchRate": 10
+      },
+      "duration": 3,
+      "stackSize": 5,
+      "usageDescription": "Apply to gain +30% magnetic range for 3 catches",
+      "price": 80
+    },
+    {
+      "id": "strength_drink",
+      "name": "Strength Drink",
+      "description": "Gives you extra pulling power",
+      "rarity": "common",
+      "spriteKey": {"key": "tilemap_packed", "frame": 53},
+      "type": "consumable",
+      "effect": "strength_boost",
+      "bonuses": {
+        "pullStrength": 25
+      },
+      "duration": 7,
+      "stackSize": 15,
+      "usageDescription": "Drink to gain +25% pull strength for 7 catches",
+      "price": 40
+    },
+    {
+      "id": "line_protector",
+      "name": "Line Protector",
+      "description": "Prevents your line from breaking",
+      "rarity": "uncommon",
+      "spriteKey": {"key": "tilemap_packed", "frame": 54},
+      "type": "consumable",
+      "effect": "line_protection",
+      "bonuses": {
+        "lineStrength": 100
+      },
+      "duration": 5,
+      "stackSize": 8,
+      "usageDescription": "Apply to prevent line breaks for 5 catches",
+      "price": 60
+    }
+  ],
+  "equipment": [
+    {
+      "id": "basic_magnet",
+      "name": "Basic Magnet",
+      "description": "A simple but effective magnet",
+      "rarity": "common",
+      "spriteKey": {"key": "tilemap_packed", "frame": 60},
+      "type": "equipment",
+      "slot": "magnet",
+      "bonuses": {
+        "catchRate": 10
+      },
+      "tier": 1,
+      "price": 100
+    },
+    {
+      "id": "iron_magnet",
+      "name": "Iron Magnet",
+      "description": "A stronger magnet made of iron",
+      "rarity": "uncommon",
+      "spriteKey": {"key": "tilemap_packed", "frame": 61},
+      "type": "equipment",
+      "slot": "magnet",
+      "bonuses": {
+        "catchRate": 18,
+        "magneticRange": 10
+      },
+      "tier": 2,
+      "price": 250
+    },
+    {
+      "id": "neodymium_magnet",
+      "name": "Neodymium Magnet",
+      "description": "A powerful rare-earth magnet",
+      "rarity": "rare",
+      "spriteKey": {"key": "tilemap_packed", "frame": 62},
+      "type": "equipment",
+      "slot": "magnet",
+      "bonuses": {
+        "catchRate": 25,
+        "rareItemChance": 15,
+        "magneticRange": 20
+      },
+      "tier": 3,
+      "price": 500
+    },
+    {
+      "id": "electromagnet",
+      "name": "Electromagnet",
+      "description": "A high-tech electromagnetic fishing device",
+      "rarity": "epic",
+      "spriteKey": {"key": "tilemap_packed", "frame": 63},
+      "type": "equipment",
+      "slot": "magnet",
+      "bonuses": {
+        "catchRate": 35,
+        "rareItemChance": 25,
+        "legendaryChance": 10,
+        "magneticRange": 35
+      },
+      "tier": 4,
+      "price": 1200
+    },
+    {
+      "id": "quantum_magnet",
+      "name": "Quantum Magnet",
+      "description": "A legendary magnet that defies physics",
+      "rarity": "legendary",
+      "spriteKey": {"key": "tilemap_packed", "frame": 64},
+      "type": "equipment",
+      "slot": "magnet",
+      "bonuses": {
+        "catchRate": 50,
+        "rareItemChance": 40,
+        "legendaryChance": 25,
+        "magneticRange": 50
+      },
+      "tier": 5,
+      "price": 3000
+    },
+    {
+      "id": "basic_rope",
+      "name": "Basic Rope",
+      "description": "A simple fishing rope",
+      "rarity": "common",
+      "spriteKey": {"key": "tilemap_packed", "frame": 65},
+      "type": "equipment",
+      "slot": "rope",
+      "bonuses": {
+        "pullStrength": 10
+      },
+      "tier": 1,
+      "price": 80
+    },
+    {
+      "id": "reinforced_rope",
+      "name": "Reinforced Rope",
+      "description": "Strong rope that rarely breaks",
+      "rarity": "uncommon",
+      "spriteKey": {"key": "tilemap_packed", "frame": 66},
+      "type": "equipment",
+      "slot": "rope",
+      "bonuses": {
+        "pullStrength": 20,
+        "lineStrength": 30
+      },
+      "tier": 2,
+      "price": 200
+    },
+    {
+      "id": "steel_cable",
+      "name": "Steel Cable",
+      "description": "Unbreakable steel cable for heavy catches",
+      "rarity": "rare",
+      "spriteKey": {"key": "tilemap_packed", "frame": 67},
+      "type": "equipment",
+      "slot": "rope",
+      "bonuses": {
+        "pullStrength": 35,
+        "lineStrength": 60
+      },
+      "tier": 3,
+      "price": 450
+    },
+    {
+      "id": "carbon_fiber_line",
+      "name": "Carbon Fiber Line",
+      "description": "Ultra-light, ultra-strong fishing line",
+      "rarity": "epic",
+      "spriteKey": {"key": "tilemap_packed", "frame": 68},
+      "type": "equipment",
+      "slot": "rope",
+      "bonuses": {
+        "pullStrength": 50,
+        "lineStrength": 90,
+        "catchRate": 10
+      },
+      "tier": 4,
+      "price": 1000
+    },
+    {
+      "id": "lucky_badge",
+      "name": "Lucky Badge",
+      "description": "A charm that brings good fortune",
+      "rarity": "uncommon",
+      "spriteKey": {"key": "tilemap_packed", "frame": 70},
+      "type": "equipment",
+      "slot": "badge",
+      "bonuses": {
+        "rareItemChance": 10,
+        "legendaryChance": 5
+      },
+      "tier": 2,
+      "price": 300
+    },
+    {
+      "id": "fortune_medallion",
+      "name": "Fortune Medallion",
+      "description": "Ancient medallion of incredible luck",
+      "rarity": "epic",
+      "spriteKey": {"key": "tilemap_packed", "frame": 71},
+      "type": "equipment",
+      "slot": "badge",
+      "bonuses": {
+        "rareItemChance": 20,
+        "legendaryChance": 15,
+        "catchRate": 5
+      },
+      "tier": 4,
+      "price": 1500
+    },
+    {
+      "id": "depth_finder",
+      "name": "Depth Finder",
+      "description": "Helps locate items in deep water",
+      "rarity": "rare",
+      "spriteKey": {"key": "tilemap_packed", "frame": 72},
+      "type": "equipment",
+      "slot": "accessory",
+      "bonuses": {
+        "magneticRange": 25,
+        "catchRate": 5
+      },
+      "tier": 3,
+      "price": 400
+    },
+    {
+      "id": "metal_detector",
+      "name": "Metal Detector",
+      "description": "Pinpoints metallic objects underwater",
+      "rarity": "uncommon",
+      "spriteKey": {"key": "tilemap_packed", "frame": 73},
+      "type": "equipment",
+      "slot": "accessory",
+      "bonuses": {
+        "catchRate": 12,
+        "magneticRange": 15
+      },
+      "tier": 2,
+      "price": 180
+    },
+    {
+      "id": "treasure_scanner",
+      "name": "Treasure Scanner",
+      "description": "Advanced device that finds hidden treasures",
+      "rarity": "legendary",
+      "spriteKey": {"key": "tilemap_packed", "frame": 74},
+      "type": "equipment",
+      "slot": "accessory",
+      "bonuses": {
+        "catchRate": 20,
+        "rareItemChance": 30,
+        "legendaryChance": 20,
+        "magneticRange": 40
+      },
+      "tier": 5,
+      "price": 2500
+    }
+  ],
+  "collectibles": [
+    {
+      "id": "can",
+      "name": "Old Can",
+      "description": "A rusty soda can from the depths",
+      "rarity": "common",
+      "spriteKey": {"key": "RustyAsstes", "frame": 0},
+      "type": "collectible",
+      "value": 5,
+      "weight": 30,
+      "price": 3
+    },
+    {
+      "id": "boot",
+      "name": "Lost Boot",
+      "description": "Someone's old rubber boot",
+      "rarity": "common",
+      "spriteKey": {"key": "RustyAsstes", "frame": 1},
+      "type": "collectible",
+      "value": 10,
+      "weight": 25,
+      "price": 6
+    },
+    {
+      "id": "bottle",
+      "name": "Glass Bottle",
+      "description": "An antique glass bottle",
+      "rarity": "uncommon",
+      "spriteKey": {"key": "RustyAsstes", "frame": 2},
+      "type": "collectible",
+      "value": 15,
+      "weight": 20,
+      "price": 10
+    },
+    {
+      "id": "watch",
+      "name": "Pocket Watch",
+      "description": "A beautifully engraved pocket watch",
+      "rarity": "rare",
+      "spriteKey": {"key": "RustyAsstes", "frame": 4},
+      "type": "collectible",
+      "value": 50,
+      "weight": 8,
+      "price": 35
+    },
+    {
+      "id": "ring",
+      "name": "Gold Ring",
+      "description": "A shiny gold ring with a gemstone",
+      "rarity": "epic",
+      "spriteKey": {"key": "RustyAsstes", "frame": 5},
+      "type": "collectible",
+      "value": 100,
+      "weight": 3,
+      "price": 75
+    },
+    {
+      "id": "treasure_chest",
+      "name": "Treasure Chest",
+      "description": "A small chest filled with coins!",
+      "rarity": "legendary",
+      "spriteKey": {"key": "RustyAsstes", "frame": 3},
+      "type": "collectible",
+      "value": 200,
+      "weight": 1,
+      "price": 150
+    },
+    {
+      "id": "fishing_rod",
+      "name": "Broken Fishing Rod",
+      "description": "Another fisherman's lost equipment",
+      "rarity": "common",
+      "spriteKey": {"key": "RustyAsstes", "frame": 6},
+      "type": "collectible",
+      "value": 8,
+      "weight": 15,
+      "price": 5
+    },
+    {
+      "id": "bike_frame",
+      "name": "Bike Frame",
+      "description": "Rusty remains of an old bicycle",
+      "rarity": "uncommon",
+      "spriteKey": {"key": "RustyAsstes", "frame": 7},
+      "type": "collectible",
+      "value": 20,
+      "weight": 12,
+      "price": 12
+    },
+    {
+      "id": "phone",
+      "name": "Old Phone",
+      "description": "A waterproof vintage mobile phone",
+      "rarity": "rare",
+      "spriteKey": {"key": "RustyAsstes", "frame": 8},
+      "type": "collectible",
+      "value": 75,
+      "weight": 5,
+      "price": 50
+    },
+    {
+      "id": "anchor",
+      "name": "Small Anchor",
+      "description": "A decorative boat anchor",
+      "rarity": "uncommon",
+      "spriteKey": {"key": "RustyAsstes", "frame": 9},
+      "type": "collectible",
+      "value": 35,
+      "weight": 10,
+      "price": 20
+    }
+  ],
+  "rarityColors": {
+    "common": "#8B8B8B",
+    "uncommon": "#4CAF50",
+    "rare": "#2196F3",
+    "epic": "#9C27B0",
+    "legendary": "#FF9800"
+  }
+}
