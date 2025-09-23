@@ -5,15 +5,15 @@
       "name": "Magnetic Enhancer",
       "description": "Temporarily boosts your magnet power",
       "rarity": "rare",
-      "spriteKey": {"key": "tilemap_packed", "frame": 52},
+      "spriteKey": {"key": "MagnetFishing_SpriteSheet", "frame": 8},
       "type": "consumable",
       "effect": "magnetic_boost",
       "bonuses": {
         "magneticRange": 30,
-        "catchRate": 10
+        "catchRate": 10,
+        "rareItemChance": 10
       },
       "duration": 3,
-      "stackSize": 5,
       "usageDescription": "Apply to gain +30% magnetic range for 3 catches",
       "price": 80
     },
@@ -22,14 +22,14 @@
       "name": "Strength Drink",
       "description": "Gives you extra pulling power",
       "rarity": "common",
-      "spriteKey": {"key": "tilemap_packed", "frame": 53},
+      "spriteKey": {"key": "MagnetFishing_SpriteSheet", "frame": 16},
       "type": "consumable",
       "effect": "strength_boost",
       "bonuses": {
-        "pullStrength": 25
+        "pullStrength": 25,
+        "rareItemChance": 1
       },
       "duration": 7,
-      "stackSize": 15,
       "usageDescription": "Drink to gain +25% pull strength for 7 catches",
       "price": 40
     },
@@ -38,14 +38,14 @@
       "name": "Line Protector",
       "description": "Prevents your line from breaking",
       "rarity": "uncommon",
-      "spriteKey": {"key": "tilemap_packed", "frame": 54},
+      "spriteKey": {"key": "MagnetFishing_SpriteSheet", "frame": 24},
       "type": "consumable",
       "effect": "line_protection",
       "bonuses": {
-        "lineStrength": 100
+        "lineStrength": 100,
+        "rareItemChance": 1
       },
       "duration": 5,
-      "stackSize": 8,
       "usageDescription": "Apply to prevent line breaks for 5 catches",
       "price": 60
     }
@@ -56,11 +56,13 @@
       "name": "Basic Magnet",
       "description": "A simple but effective magnet",
       "rarity": "common",
-      "spriteKey": {"key": "tilemap_packed", "frame": 60},
+      "spriteKey": {"key": "MagnetFishing_SpriteSheet", "frame": 1},
       "type": "equipment",
       "slot": "magnet",
       "bonuses": {
-        "catchRate": 10
+        "catchRate": 10,
+        "rareItemChance": 2,
+        "magneticRange": 5
       },
       "tier": 1,
       "price": 100
@@ -70,45 +72,30 @@
       "name": "Iron Magnet",
       "description": "A stronger magnet made of iron",
       "rarity": "uncommon",
-      "spriteKey": {"key": "tilemap_packed", "frame": 61},
+      "spriteKey": {"key": "MagnetFishing_SpriteSheet", "frame": 9},
       "type": "equipment",
       "slot": "magnet",
       "bonuses": {
         "catchRate": 18,
-        "magneticRange": 10
+        "rareItemChance": 5,
+        "magneticRange": 15
       },
       "tier": 2,
       "price": 250
-    },
-    {
-      "id": "neodymium_magnet",
-      "name": "Neodymium Magnet",
-      "description": "A powerful rare-earth magnet",
-      "rarity": "rare",
-      "spriteKey": {"key": "tilemap_packed", "frame": 62},
-      "type": "equipment",
-      "slot": "magnet",
-      "bonuses": {
-        "catchRate": 25,
-        "rareItemChance": 15,
-        "magneticRange": 20
-      },
-      "tier": 3,
-      "price": 500
     },
     {
       "id": "electromagnet",
       "name": "Electromagnet",
       "description": "A high-tech electromagnetic fishing device",
       "rarity": "epic",
-      "spriteKey": {"key": "tilemap_packed", "frame": 63},
+      "spriteKey": {"key": "MagnetFishing_SpriteSheet", "frame": 17},
       "type": "equipment",
       "slot": "magnet",
       "bonuses": {
         "catchRate": 35,
-        "rareItemChance": 25,
-        "legendaryChance": 10,
-        "magneticRange": 35
+        "rareItemChance": 30,
+        "legendaryChance": 12,
+        "magneticRange": 40
       },
       "tier": 4,
       "price": 1200
@@ -118,14 +105,14 @@
       "name": "Quantum Magnet",
       "description": "A legendary magnet that defies physics",
       "rarity": "legendary",
-      "spriteKey": {"key": "tilemap_packed", "frame": 64},
+      "spriteKey": {"key": "MagnetFishing_SpriteSheet", "frame": 25},
       "type": "equipment",
       "slot": "magnet",
       "bonuses": {
         "catchRate": 50,
-        "rareItemChance": 40,
-        "legendaryChance": 25,
-        "magneticRange": 50
+        "rareItemChance": 45,
+        "legendaryChance": 30,
+        "magneticRange": 60
       },
       "tier": 5,
       "price": 3000
@@ -135,11 +122,13 @@
       "name": "Basic Rope",
       "description": "A simple fishing rope",
       "rarity": "common",
-      "spriteKey": {"key": "tilemap_packed", "frame": 65},
+      "spriteKey": {"key": "MagnetFishing_SpriteSheet", "frame": 5},
       "type": "equipment",
       "slot": "rope",
       "bonuses": {
-        "pullStrength": 10
+        "pullStrength": 10,
+        "rareItemChance": 2,
+        "lineStrength": 5
       },
       "tier": 1,
       "price": 80
@@ -149,12 +138,14 @@
       "name": "Reinforced Rope",
       "description": "Strong rope that rarely breaks",
       "rarity": "uncommon",
-      "spriteKey": {"key": "tilemap_packed", "frame": 66},
+      "spriteKey": {"key": "MagnetFishing_SpriteSheet", "frame": 13},
       "type": "equipment",
       "slot": "rope",
       "bonuses": {
         "pullStrength": 20,
-        "lineStrength": 30
+        "rareItemChance": 4,
+        "lineStrength": 10,
+        "catchRate": 5
       },
       "tier": 2,
       "price": 200
@@ -164,12 +155,15 @@
       "name": "Steel Cable",
       "description": "Unbreakable steel cable for heavy catches",
       "rarity": "rare",
-      "spriteKey": {"key": "tilemap_packed", "frame": 67},
+      "spriteKey": {"key": "MagnetFishing_SpriteSheet", "frame": 21},
       "type": "equipment",
       "slot": "rope",
       "bonuses": {
         "pullStrength": 35,
-        "lineStrength": 60
+        "rareItemChance": 8,
+        "lineStrength": 15,
+        "catchRate": 8,
+        "legendaryChance": 3
       },
       "tier": 3,
       "price": 450
@@ -179,91 +173,53 @@
       "name": "Carbon Fiber Line",
       "description": "Ultra-light, ultra-strong fishing line",
       "rarity": "epic",
-      "spriteKey": {"key": "tilemap_packed", "frame": 68},
+      "spriteKey": {"key": "MagnetFishing_SpriteSheet", "frame": 29},
       "type": "equipment",
       "slot": "rope",
       "bonuses": {
         "pullStrength": 50,
-        "lineStrength": 90,
-        "catchRate": 10
+        "rareItemChance": 15,
+        "lineStrength": 25,
+        "catchRate": 15,
+        "legendaryChance": 8
       },
       "tier": 4,
       "price": 1000
     },
-    {
-      "id": "lucky_badge",
-      "name": "Lucky Badge",
-      "description": "A charm that brings good fortune",
-      "rarity": "uncommon",
-      "spriteKey": {"key": "tilemap_packed", "frame": 70},
-      "type": "equipment",
-      "slot": "badge",
-      "bonuses": {
-        "rareItemChance": 10,
-        "legendaryChance": 5
-      },
-      "tier": 2,
-      "price": 300
-    },
-    {
-      "id": "fortune_medallion",
-      "name": "Fortune Medallion",
-      "description": "Ancient medallion of incredible luck",
-      "rarity": "epic",
-      "spriteKey": {"key": "tilemap_packed", "frame": 71},
-      "type": "equipment",
-      "slot": "badge",
-      "bonuses": {
-        "rareItemChance": 20,
-        "legendaryChance": 15,
-        "catchRate": 5
-      },
-      "tier": 4,
-      "price": 1500
-    },
-    {
-      "id": "depth_finder",
-      "name": "Depth Finder",
-      "description": "Helps locate items in deep water",
-      "rarity": "rare",
-      "spriteKey": {"key": "tilemap_packed", "frame": 72},
-      "type": "equipment",
-      "slot": "accessory",
-      "bonuses": {
-        "magneticRange": 25,
-        "catchRate": 5
-      },
-      "tier": 3,
-      "price": 400
-    },
+   
     {
       "id": "metal_detector",
       "name": "Metal Detector",
       "description": "Pinpoints metallic objects underwater",
       "rarity": "uncommon",
-      "spriteKey": {"key": "tilemap_packed", "frame": 73},
+      "spriteKey": {"key": "MagnetFishing_SpriteSheet", "frame": 22},
       "type": "equipment",
       "slot": "accessory",
       "bonuses": {
         "catchRate": 12,
-        "magneticRange": 15
+        "rareItemChance": 8,
+        "magneticRange": 20,
+        "legendaryChance": 2
       },
       "tier": 2,
       "price": 180
     },
+   
+   
     {
       "id": "treasure_scanner",
       "name": "Treasure Scanner",
       "description": "Advanced device that finds hidden treasures",
       "rarity": "legendary",
-      "spriteKey": {"key": "tilemap_packed", "frame": 74},
+      "spriteKey": {"key": "MagnetFishing_SpriteSheet", "frame": 14},
       "type": "equipment",
       "slot": "accessory",
       "bonuses": {
-        "catchRate": 20,
-        "rareItemChance": 30,
-        "legendaryChance": 20,
-        "magneticRange": 40
+        "catchRate": 25,
+        "rareItemChance": 35,
+        "legendaryChance": 25,
+        "magneticRange": 50,
+        "pullStrength": 10
       },
       "tier": 5,
       "price": 2500
@@ -278,7 +234,7 @@
       "spriteKey": {"key": "RustyAsstes", "frame": 0},
       "type": "collectible",
       "weight": 30,
-      "price": 3
+      "price": 5
     },
     {
       "id": "boot",
@@ -288,7 +244,7 @@
       "spriteKey": {"key": "RustyAsstes", "frame": 1},
       "type": "collectible",
       "weight": 25,
-      "price": 6
+      "price": 11
     },
     {
       "id": "bottle",
@@ -298,7 +254,7 @@
       "spriteKey": {"key": "RustyAsstes", "frame": 2},
       "type": "collectible",
       "weight": 20,
-      "price": 10
+      "price": 25
     },
     {
       "id": "watch",
@@ -308,7 +264,7 @@
       "spriteKey": {"key": "RustyAsstes", "frame": 4},
       "type": "collectible",
       "weight": 8,
-      "price": 35
+      "price": 150
     },
     {
       "id": "ring",
@@ -318,7 +274,7 @@
       "spriteKey": {"key": "RustyAsstes", "frame": 5},
       "type": "collectible",
       "weight": 3,
-      "price": 75
+      "price": 350
     },
     {
       "id": "treasure_chest",
@@ -328,7 +284,7 @@
       "spriteKey": {"key": "RustyAsstes", "frame": 3},
       "type": "collectible",
       "weight": 1,
-      "price": 150
+      "price": 500
     },
     {
       "id": "fishing_rod",
@@ -338,7 +294,7 @@
       "spriteKey": {"key": "RustyAsstes", "frame": 6},
       "type": "collectible",
       "weight": 15,
-      "price": 5
+      "price": 50
     },
     {
       "id": "bike_frame",
@@ -348,7 +304,7 @@
       "spriteKey": {"key": "RustyAsstes", "frame": 7},
       "type": "collectible",
       "weight": 12,
-      "price": 12
+      "price": 120
     },
     {
       "id": "phone",
@@ -358,7 +314,7 @@
       "spriteKey": {"key": "RustyAsstes", "frame": 8},
       "type": "collectible",
       "weight": 5,
-      "price": 50
+      "price": 100
     },
     {
       "id": "anchor",
@@ -368,7 +324,107 @@
       "spriteKey": {"key": "RustyAsstes", "frame": 9},
       "type": "collectible",
       "weight": 10,
-      "price": 20
+      "price": 100
+    },
+    {
+      "id": "rusty_key",
+      "name": "Rusty Key",
+      "description": "An old iron key with mysterious origins",
+      "rarity": "common",
+      "spriteKey": {"key": "RustyAsstes", "frame": 10},
+      "type": "collectible",
+      "weight": 35,
+      "price": 15
+    },
+    {
+      "id": "metal_spoon",
+      "name": "Tarnished Spoon",
+      "description": "A silver spoon blackened by time",
+      "rarity": "common",
+      "spriteKey": {"key": "RustyAsstes", "frame": 11},
+      "type": "collectible",
+      "weight": 32,
+      "price": 8
+    },
+    {
+      "id": "old_coin",
+      "name": "Antique Coin",
+      "description": "A weathered coin from a bygone era",
+      "rarity": "uncommon",
+      "spriteKey": {"key": "RustyAsstes", "frame": 12},
+      "type": "collectible",
+      "weight": 22,
+      "price": 45
+    },
+    {
+      "id": "chain_necklace",
+      "name": "Broken Chain Necklace",
+      "description": "A delicate chain with missing links",
+      "rarity": "uncommon",
+      "spriteKey": {"key": "RustyAsstes", "frame": 13},
+      "type": "collectible",
+      "weight": 18,
+      "price": 75
+    },
+    {
+      "id": "compass",
+      "name": "Broken Compass",
+      "description": "A navigator's compass that points nowhere",
+      "rarity": "rare",
+      "spriteKey": {"key": "RustyAsstes", "frame": 14},
+      "type": "collectible",
+      "weight": 12,
+      "price": 180
+    },
+    {
+      "id": "horseshoe",
+      "name": "Lucky Horseshoe",
+      "description": "An iron horseshoe said to bring good fortune",
+      "rarity": "uncommon",
+      "spriteKey": {"key": "RustyAsstes", "frame": 15},
+      "type": "collectible",
+      "weight": 16,
+      "price": 65
+    },
+    {
+      "id": "metallic_artifact",
+      "name": "Strange Artifact",
+      "description": "An unidentifiable metallic object of unknown purpose",
+      "rarity": "epic",
+      "spriteKey": {"key": "RustyAsstes", "frame": 16},
+      "type": "collectible",
+      "weight": 6,
+      "price": 400
+    },
+    {
+      "id": "dog_tag",
+      "name": "Military Dog Tag",
+      "description": "A weathered dog tag with faded engravings",
+      "rarity": "rare",
+      "spriteKey": {"key": "RustyAsstes", "frame": 17},
+      "type": "collectible",
+      "weight": 7,
+      "price": 200
+    },
+    {
+      "id": "brass_button",
+      "name": "Ornate Brass Button",
+      "description": "An elaborate button from a military uniform",
+      "rarity": "common",
+      "spriteKey": {"key": "RustyAsstes", "frame": 18},
+      "type": "collectible",
+      "weight": 28,
+      "price": 12
+    },
+    {
+      "id": "ancient_medallion",
+      "name": "Ancient Medallion",
+      "description": "A mysterious medallion with cryptic symbols",
+      "rarity": "legendary",
+      "spriteKey": {"key": "RustyAsstes", "frame": 19},
+      "type": "collectible",
+      "weight": 2,
+      "price": 750
     }
   ],
   "rarityColors": {
