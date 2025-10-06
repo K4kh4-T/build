@@ -10,7 +10,6 @@
       "effect": "magnetic_boost",
       "bonuses": {
         "magneticRange": 30,
-        "catchRate": 10,
         "rareItemChance": 10
       },
       "duration": 3,
@@ -35,18 +34,17 @@
     },
     {
       "id": "line_protector",
-      "name": "Line Protector",
-      "description": "Prevents your line from breaking",
+      "name": "Lucky Charm",
+      "description": "Increases your chances of finding rare items",
       "rarity": "uncommon",
       "spriteKey": {"key": "MagnetFishing_SpriteSheet", "frame": 24},
       "type": "consumable",
-      "effect": "line_protection",
+      "effect": "luck_boost",
       "bonuses": {
-        "lineStrength": 100,
-        "rareItemChance": 1
+        "rareItemChance": 15
       },
       "duration": 5,
-      "usageDescription": "Apply to prevent line breaks for 5 catches",
+      "usageDescription": "Use to increase rare item chance for 5 catches",
       "price": 60
     }
   ],
@@ -60,7 +58,6 @@
       "type": "equipment",
       "slot": "magnet",
       "bonuses": {
-        "catchRate": 10,
         "rareItemChance": 2,
         "magneticRange": 5
       },
@@ -76,7 +73,6 @@
       "type": "equipment",
       "slot": "magnet",
       "bonuses": {
-        "catchRate": 18,
         "rareItemChance": 5,
         "magneticRange": 15
       },
@@ -92,7 +88,6 @@
       "type": "equipment",
       "slot": "magnet",
       "bonuses": {
-        "catchRate": 35,
         "rareItemChance": 30,
         "legendaryChance": 12,
         "magneticRange": 40
@@ -109,7 +104,6 @@
       "type": "equipment",
       "slot": "magnet",
       "bonuses": {
-        "catchRate": 50,
         "rareItemChance": 45,
         "legendaryChance": 30,
         "magneticRange": 60
@@ -127,8 +121,7 @@
       "slot": "rope",
       "bonuses": {
         "pullStrength": 10,
-        "rareItemChance": 2,
-        "lineStrength": 5
+        "rareItemChance": 2
       },
       "tier": 1,
       "price": 80
@@ -143,9 +136,7 @@
       "slot": "rope",
       "bonuses": {
         "pullStrength": 20,
-        "rareItemChance": 4,
-        "lineStrength": 10,
-        "catchRate": 5
+        "rareItemChance": 4
       },
       "tier": 2,
       "price": 200
@@ -161,8 +152,6 @@
       "bonuses": {
         "pullStrength": 35,
         "rareItemChance": 8,
-        "lineStrength": 15,
-        "catchRate": 8,
         "legendaryChance": 3
       },
       "tier": 3,
@@ -179,8 +168,6 @@
       "bonuses": {
         "pullStrength": 50,
         "rareItemChance": 15,
-        "lineStrength": 25,
-        "catchRate": 15,
         "legendaryChance": 8
       },
       "tier": 4,
@@ -196,7 +183,6 @@
       "type": "equipment",
       "slot": "accessory",
       "bonuses": {
-        "catchRate": 12,
         "rareItemChance": 8,
         "magneticRange": 20,
         "legendaryChance": 2
@@ -215,7 +201,6 @@
       "type": "equipment",
       "slot": "accessory",
       "bonuses": {
-        "catchRate": 25,
         "rareItemChance": 35,
         "legendaryChance": 25,
         "magneticRange": 50,
